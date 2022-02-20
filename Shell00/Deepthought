@@ -1,0 +1,469 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+c2r2s3.42urduliz.com
+Darwin 19.6.0 x86_64
+$> date
+Tue Feb 15 17:45:39 CET 2022
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include/c++/4.2.1
+Apple clang version 12.0.0 (clang-1200.0.32.29)
+Target: x86_64-apple-darwin19.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple clang version 12.0.0 (clang-1200.0.32.29)
+Target: x86_64-apple-darwin19.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42urduliz.com:vogsphere/intra-uuid-bb70cda2-8041-468c-ad00-ee0d0215558a-4002787-almirand
+
+= Git history ==================================================================
+$> git -C /tmp/tmp8sxhdk1v/user log --pretty='%H - %an, %ad : %s'
+bc34ae3c08bd358fbfb7d6645c7cce52a2028d3a - Alainml, Tue Feb 15 12:24:37 2022 +0100 : changed public key, last one had password, now doesnt
+9194ecebb46d750287f935ef2087f6baff87f14e - Alainml, Tue Feb 15 12:13:52 2022 +0100 : FINAL VERSION,deleted mywork.c jut in case for intranet test, in case they dont want it
+2f18d0422360e5322772f5df0cbdbd69db0ab372 - Alainml, Tue Feb 15 11:42:00 2022 +0100 : deleted ignored, just in cas for correction, no ignored files in repo for testing
+35717d4608065192359e58af53344ca3eafe6095 - Alainml, Tue Feb 15 11:23:46 2022 +0100 : Final commit, mywork.c~ and .DS for gitignore example preview
+2ef472403b0b99d636d8cb713d9a776896a1c6fe - Alainml, Tue Feb 15 10:50:30 2022 +0100 : ignore FINISHED
+7bbcbfa6e6b132a4b685d1d64a8c3494e071daa7 - Alainml, Tue Feb 15 10:19:02 2022 +0100 : WIP ex09, parametro test no funciona. Aadido un .txt para testear
+7a0a339d49643a91fb6fcbb2bf10fe4a7579c3b0 - Alainml, Tue Feb 15 09:33:22 2022 +0100 : ex06 WIP, falta ejecutar script desde ex06 pero recursivo desde root. ex08 OK. ex09 falta parametro test.
+aa19160aad77fa7e26ace8c0df5d006d77752c07 - Alainml, Mon Feb 14 18:03:32 2022 +0100 : gitignore
+a51116c2549ef122645e14d5026f3ff8dcf3df0b - Alainml, Mon Feb 14 17:58:22 2022 +0100 : ex06 vacio, gitignore WIP. Posible problema por fichero oculto.
+55fde2e8586ef4d9ef00a1a7e9942e2a29da274c - Alainml, Mon Feb 14 17:42:03 2022 +0100 : muchs cosas
+925eeb8696868b9d63cb16d0f37f5b9a9cfcb264 - Alainml, Mon Feb 14 13:41:57 2022 +0100 : ex05 y .DS_Store para el git ignore
+49b9bc18398330aadc5fd580de946d614ebe0ad9 - Alainml, Mon Feb 14 13:26:21 2022 +0100 : ex04
+5b0fcffa869fc8ce51399dd2ac986897fd2446b4 - Alainml, Mon Feb 14 13:26:16 2022 +0100 : ex03
+429265ad95019351ed083efedf66ed6309a08fe6 - Alainml, Mon Feb 14 13:25:27 2022 +0100 : ex02
+1561147258e045bf935fe15774a4ebf1cc54c06b - Alainml, Mon Feb 14 13:25:20 2022 +0100 : ex01
+680ab5b69cde0bc2e1b361554fbeabb2157c9a76 - Alainml, Mon Feb 14 13:23:31 2022 +0100 : ex00
+
+= Collected files ==========================================
+$> ls -lAR /tmp/tmp8sxhdk1v/user
+total 24
+-rw-r--r--  1 root  wheel    21 Feb 15 17:45 .gitignore
+-rw-r--r--  1 root  wheel  4648 Feb 15 17:45 __GIT_HISTORY
+drwxr-xr-x  3 root  wheel    96 Feb 15 17:45 ex00
+drwxr-xr-x  3 root  wheel    96 Feb 15 17:45 ex01
+drwxr-xr-x  3 root  wheel    96 Feb 15 17:45 ex02
+drwxr-xr-x  4 root  wheel   128 Feb 15 17:45 ex03
+drwxr-xr-x  3 root  wheel    96 Feb 15 17:45 ex04
+drwxr-xr-x  3 root  wheel    96 Feb 15 17:45 ex05
+drwxr-xr-x  3 root  wheel    96 Feb 15 17:45 ex06
+drwxr-xr-x  3 root  wheel    96 Feb 15 17:45 ex07
+drwxr-xr-x  3 root  wheel    96 Feb 15 17:45 ex08
+drwxr-xr-x  3 root  wheel    96 Feb 15 17:45 ex09
+
+/tmp/tmp8sxhdk1v/user/ex00:
+total 8
+-rw-r--r--  1 root  wheel  2 Feb 15 17:45 z
+
+/tmp/tmp8sxhdk1v/user/ex01:
+total 8
+-rw-r--r--  1 root  wheel  2048 Feb 15 17:45 testShell00.tar
+
+/tmp/tmp8sxhdk1v/user/ex02:
+total 16
+-rw-r--r--  1 root  wheel  6144 Feb 15 17:45 exo2.tar
+
+/tmp/tmp8sxhdk1v/user/ex03:
+total 24
+-rw-r--r--  1 root  wheel  6148 Feb 15 17:45 .DS_Store
+-rw-r--r--  1 root  wheel   583 Feb 15 17:45 id_rsa_pub
+
+/tmp/tmp8sxhdk1v/user/ex04:
+total 8
+-rw-r--r--  1 root  wheel  12 Feb 15 17:45 midLS
+
+/tmp/tmp8sxhdk1v/user/ex05:
+total 8
+-rw-r--r--  1 root  wheel  28 Feb 15 17:45 git_commit.sh
+
+/tmp/tmp8sxhdk1v/user/ex06:
+total 8
+-rw-r--r--  1 root  wheel  51 Feb 15 17:45 git_ignore.sh
+
+/tmp/tmp8sxhdk1v/user/ex07:
+total 8
+-rw-r--r--  1 root  wheel  538 Feb 15 17:45 b
+
+/tmp/tmp8sxhdk1v/user/ex08:
+total 8
+-rw-r--r--  1 root  wheel  96 Feb 15 17:45 clean
+
+/tmp/tmp8sxhdk1v/user/ex09:
+total 8
+-rw-r--r--  1 root  wheel  25 Feb 15 17:45 ft_magic
+
+= ex00 =========================================================================
+$> diff -U 3 z ref_output | cat -e
+
+
+Diff OK :D
+Grade: 5
+
+= ex01 =========================================================================
+total 8
+-rw-r--r--  1 deepthought  deepthought  2048 Feb 15 16:45 testShell00.tar
+
+
+-r--r-xr-x  1 deepthought  deepthought  40 Jun  1  2022 testShell00
+
+
+Grade: 5
+
+= ex02 =========================================================================
+total 16
+-rw-r--r--  1 deepthought  deepthought  6144 Feb 15 16:45 exo2.tar
+
+
+drwx--xr-x  2 deepthought  deepthought  64 Jun  1  2022 test0
+
+
+total 16
+-rw-r--r--  1 deepthought  deepthought  6144 Feb 15 16:45 exo2.tar
+
+
+-rwx--xr--  1 deepthought  deepthought  4 Jun  1  2022 test1
+
+
+total 16
+-rw-r--r--  1 deepthought  deepthought  6144 Feb 15 16:45 exo2.tar
+
+
+dr-x---r--  2 deepthought  deepthought  64 Jun  1  2022 test2
+
+
+total 16
+-rw-r--r--  1 deepthought  deepthought  6144 Feb 15 16:45 exo2.tar
+
+
+-r-----r--  2 deepthought  deepthought  1 Jun  1  2022 test3
+
+
+total 16
+-rw-r--r--  1 deepthought  deepthought  6144 Feb 15 16:45 exo2.tar
+
+
+-rw-r----x  1 deepthought  deepthought  2 Jun  1  2022 test4
+
+
+total 16
+-rw-r--r--  1 deepthought  deepthought  6144 Feb 15 16:45 exo2.tar
+
+
+-r-----r--  2 deepthought  deepthought  1 Jun  1  2022 test5
+
+
+total 16
+-rw-r--r--  1 deepthought  deepthought  6144 Feb 15 16:45 exo2.tar
+
+
+lrwxr-xr-x  1 deepthought  deepthought  5 Jun  1  2022 test6 -> test0
+
+
+total 16
+-rw-r--r--  1 deepthought  deepthought  6144 Feb 15 16:45 exo2.tar
+
+
+8
+
+
+Grade: 10
+
+= ex03 =========================================================================
+
+grep: klist.txt: No such file or directory
+
+
+Grade: 0
+
+= ex04 =========================================================================
+total 16
+-rw-r--r--  1 deepthought  deepthought   12 Feb 15 16:45 midLS
+-rw-r--r--  1 deepthought  deepthought  536 Feb 15 16:45 test_midls.sh
+
+
+$> sh ./test_midls.sh
+./test_midls.sh: line 4: sleep: command not found
+./test_midls.sh: line 6: sleep: command not found
+./test_midls.sh: line 8: sleep: command not found
+
+./test_midls.sh: line 10: sleep: command not found
+./test_midls.sh: line 12: sleep: command not found
+./test_midls.sh: line 14: sleep: command not found
+./test_midls.sh: line 16: sleep: command not found
+./test_midls.sh: line 18: sleep: command not found
+./test_midls.sh: line 20: sleep: command not found
+
+./test_midls.sh: line 29: sleep: command not found
+
+< our file, > your file
+1,2c1,2
+< chaussette, poilaudent, zzz, toto, titi/, test/, midLS, test_midls.sh
+< toto, chaussette, poilaudent, zzz, titi/, test/, midLS, test_midls.sh
+---
+> toto, zzz, chaussette, poilaudent, titi/, test/, midLS, test_midls.sh
+> zzz, toto, chaussette, poilaudent, titi/, test/, midLS, test_midls.sh
+KO
+
+
+./test_midls.sh: line 4: sleep: command not found
+./test_midls.sh: line 6: sleep: command not found
+./test_midls.sh: line 8: sleep: command not found
+./test_midls.sh: line 10: sleep: command not found
+./test_midls.sh: line 12: sleep: command not found
+./test_midls.sh: line 14: sleep: command not found
+./test_midls.sh: line 16: sleep: command not found
+./test_midls.sh: line 18: sleep: command not found
+./test_midls.sh: line 20: sleep: command not found
+./test_midls.sh: line 29: sleep: command not found
+< our file, > your file
+1,2c1,2
+< chaussette, poilaudent, zzz, toto, titi/, test/, midLS, test_midls.sh
+< toto, chaussette, poilaudent, zzz, titi/, test/, midLS, test_midls.sh
+---
+> toto, zzz, chaussette, poilaudent, titi/, test/, midLS, test_midls.sh
+> zzz, toto, chaussette, poilaudent, titi/, test/, midLS, test_midls.sh
+KO
+
+Grade: 0
+
+= ex05 =========================================================================
+total 24
+-rw-r--r--  1 deepthought  deepthought   28 Feb 15 16:45 git_commit.sh
+-rw-r--r--  1 deepthought  deepthought  266 Feb 15 16:45 start.sh
+-rw-r--r--  1 deepthought  deepthought   27 Feb 15 16:45 test_git_commit.sh
+
+
+warning: templates not found in /usr/share/git-core/templates
+Initialized empty Git repository in /tmp/ti9kssw1/.git/
+
+[master (root-commit) 18f6d9c] commit toto.dylib
+ Committer: Deepthought <deepthought@c2r2s3.42urduliz.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 toto.dylib
+
+[master 8ca8031] commit notice_me_senpai
+ Committer: Deepthought <deepthought@c2r2s3.42urduliz.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 notice_me_senpai
+[master 891b2eb] commit top_secret
+ Committer: Deepthought <deepthought@c2r2s3.42urduliz.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 top_secret
+
+[master 3f89e1c] commit yoyo.test
+ Committer: Deepthought <deepthought@c2r2s3.42urduliz.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 yoyo.test
+[master a3ea7b9] commit resultat_selection_piscine
+ Committer: Deepthought <deepthought@c2r2s3.42urduliz.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 resultat_selection_piscine
+[master 8725a6b] commit test.test.test
+ Committer: Deepthought <deepthought@c2r2s3.42urduliz.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test.test.test
+
+
+$> diff -U 3 user_output test_output | cat -e
+
+
+Diff OK :D
+OK
+Grade: 10
+
+= ex06 =========================================================================
+
+total 24
+-rw-r--r--  1 deepthought  deepthought   51 Feb 15 16:45 git_ignore.sh
+-rw-r--r--  1 deepthought  deepthought  565 Feb 15 16:45 start.sh
+-rw-r--r--  1 deepthought  deepthought   51 Feb 15 16:45 test_git_ignore.sh
+
+
+warning: templates not found in /usr/share/git-core/templates
+Initialized empty Git repository in /tmp/f0cxk1yr/.git/
+
+fatal: not a git repository (or any of the parent directories): .git
+
+
+$> diff -U 3 user_output test_output | cat -e
+--- user_output 2022-02-15 16:45:47.000000000 +0000$
++++ test_output 2022-02-15 16:45:47.000000000 +0000$
+@@ -0,0 +1,6 @@$
++.OxDuLxsGyBQzH.nop.test$
++DhANTfCrHGvwSyoyo.test$
++meSkxBUziTatoto.dylib$
++pLRVLxOInm/.OxDuLxsGyBQzH.nop.test$
++pLRVLxOInm/DhANTfCrHGvwSyoyo.test$
++pLRVLxOInm/meSkxBUziTatoto.dylib$
+
+
+--- user_output 2022-02-15 16:45:47.000000000 +0000$
++++ test_output 2022-02-15 16:45:47.000000000 +0000$
+@@ -0,0 +1,6 @@$
++.OxDuLxsGyBQzH.nop.test$
++DhANTfCrHGvwSyoyo.test$
++meSkxBUziTatoto.dylib$
++pLRVLxOInm/.OxDuLxsGyBQzH.nop.test$
++pLRVLxOInm/DhANTfCrHGvwSyoyo.test$
++pLRVLxOInm/meSkxBUziTatoto.dylib$
+
+Diff KO :(
+KO
+Grade: 0
+
+= ex07 =========================================================================
+$> diff -U 3 b 42b | cat -e
+
+
+Diff OK :D
+Grade: 10
+
+= ex08 =========================================================================
+total 16
+-rw-r--r--  1 deepthought  deepthought   96 Feb 15 16:45 clean
+-rwxr-xr-x  1 deepthought  deepthought  859 Feb 15 16:45 test_clean.sh
+
+
+$> sh ./test_clean.sh
+./test/.7~
+./test/disdonc~
+./test/test/#2#
+./test/test/titi/4~
+./test/test/titi/#4#
+./test/test/2~
+./test/#1#
+./test/#et#
+./test/titi/3~
+./test/titi/test/#5#
+./test/titi/test/5~
+./test/titi/#3#
+./test/1~
+KO
+
+
+./test/.7~
+./test/disdonc~
+./test/test/#2#
+./test/test/titi/4~
+./test/test/titi/#4#
+./test/test/2~
+./test/#1#
+./test/#et#
+./test/titi/3~
+./test/titi/test/#5#
+./test/titi/test/5~
+./test/titi/#3#
+./test/1~
+KO
+
+Grade: 0
+
+= ex09 =========================================================================
+total 32
+-rwxr-xr-x  1 deepthought  deepthought   21 Feb 15 16:45 correct_magic
+-rw-r--r--  1 deepthought  deepthought   25 Feb 15 16:45 ft_magic
+-rw-r--r--  1 deepthought  deepthought   46 Feb 15 16:45 test42
+-rwxr-xr-x  1 deepthought  deepthought  711 Feb 15 16:45 test_magic.sh
+
+
+$> sh ./test_magic.sh
+-n testing ft_magic 1/2 ...
+/usr/share/file/magic, 0: Warning: using regular magic file `correct_magic'
+/usr/share/file/magic, 0: Warning: using regular magic file `./ft_magic'
+< our file, > your file
+1c1
+< test42: 42 file$
+---
+> test42: funciona, ASCII text, with no line terminators$
+[KO]
+
+
+-n testing ft_magic 1/2 ...
+/usr/share/file/magic, 0: Warning: using regular magic file `correct_magic'
+/usr/share/file/magic, 0: Warning: using regular magic file `./ft_magic'
+< our file, > your file
+1c1
+< test42: 42 file$
+---
+> test42: funciona, ASCII text, with no line terminators$
+[KO]
+
+Grade: 0
+
+= Final grade: 20 ==============================================================
