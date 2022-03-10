@@ -6,7 +6,7 @@
 /*   By: almirand <almirand@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 11:29:01 by almirand          #+#    #+#             */
-/*   Updated: 2022/03/07 13:23:26 by almirand         ###   ########.fr       */
+/*   Updated: 2022/03/08 13:16:02 by almirand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,57 +18,62 @@ int	main(void)
 {
 	char *base = "0123456789";
 
-	ft_putnbr_base(12, base);
+	ft_putnbr_base(3, base);
 } */
 
-int	ft_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
-}
-
-int	check_errors(char *base)
+void	ft_test_base(char *base, int *test)
 {
 	int	i;
 	int	j;
 
-	j = 1;
 	i = 0;
-	if (base[0] == '\0' || ft_strlen(base) == 1)
-		return (0);
-	while (base[i])
+	j = 0;
+	if (base[0] == '\0' || base[1] == '\0')
+		*test = 1;
+	while (base[i] && *test == 0)
 	{
-		j = 1;
-		if (base[i] == '+' || base[i] == '-')
-			return (1);
-		while (base[i + j])
+		j = i;
+		while (base[j])
 		{
-			if (base[i] == base[i + j])
-				return (0);
 			j++;
+			if (base[i] == base[j])
+				*test = 1;
 		}
-		i++;
+		if (base[i] == '+' || base[i] == '-' || base[i] == '%'
+			|| base[i] == '/' || base[i] == '*' || base[i] == '='
+			|| base[i] == ',' || base[i] == '.'
+			|| base[i] < 33 || base[i] > 126)
+			*test = 1;
+		else
+			i++;
 	}
-	return (0);
 }
 
 void	ft_putnbr_base(int nbr, char	*base)
 {
-	int	length;
-	int	num;
+	int		i;
+	int		test;
+	long	nb;
 
-	if (check_errors(base) == 0)
+	i = 0;
+	test = 0;
+	ft_test_base(base, &test);
+	nb = nbr;
+	if (test == 0)
 	{
-		length = ft_strlen(base);
-		if (nbr / length)
-			ft_putnbr_base((nbr / length), base);
-		num = nbr % length;
-		write(1, &base[num], 1);
+		if (nb < 0)
+		{
+			write(1, "-", 1);
+			nb = -nb;
+		}
+		while (base[i])
+			i++;
+		if (nb < i)
+			write(1, &base[nb], 1);
+		if (nb >= i)
+		{
+			ft_putnbr_base(nb / i, base);
+			ft_putnbr_base(nb % i, base);
+		}
 	}
 }
