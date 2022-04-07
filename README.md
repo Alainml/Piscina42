@@ -1,5 +1,6 @@
 # Piscina42
-Trabajo realizado durante la piscina en 42Urduliz de febrero-marzo 2022.
+Work done during 42Urduliz piscine, february-march 2022.
+There are some coding peculiarities due to the Norma we must follow.
 
 SHELL 00 100%
 
@@ -14,6 +15,10 @@ C02 -> ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: OK | ex06: O
 C03 -> ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: OK
 
 C04 -> ex00: OK | ex01: OK | ex02: OK | ex03: KO | ex04: Does not compile | ex05: KO
+
+C05 -> ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: OK | ex06: OK | ex07: OK | ex08: Nothing turned in
+
+C06 -> ex00: OK | ex01: OK | ex02: OK | ex03: Nothing turned in
 
 RUSH00 -> 112%
 
